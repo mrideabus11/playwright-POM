@@ -7,5 +7,6 @@ test("login page test", async ({ page }) => {
   const homePage = new HomePage(page)
   await page.goto("https://freelance-learn-automation.vercel.app/login")
   await logintestpage.loginToApp()
+  await homePage.verifyManageOption()
   await homePage.logoutFromApp()
 })
